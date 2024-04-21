@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif; /* Change font family */
+    /* background-color: #0d1b2a; */
+    background-color: #f5efff;
+    /* color: #FFEDD8; */
+    color: #3e3b5f;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.highlight {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    /* Add any other styles you want for the highlighted text */
+}
+
+/* #nav-bg{ */
+    /* background-color: #1b263b; */
+    /* background-color: #d2abfe; */
+/* } */
+
+.nav-link,.navbar-nav{
+    /* color: #FFEDD8; */
+    font-family: Arial, sans-serif; /* Change font family */
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.navbar-brand{
+    /* color: #FFEDD8; */
+    /* color: #803cd2; */
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d3a8e5; /* Change color on hover for links */
+}
+
+.navbar-brand:hover {
+    color: #000000; /* Keep brand color same on hover */
+}
+
+.navbar-toggler-custom {
+    background-color: rgba(255, 255, 255, 0.5); /* Change the background color */
+    border-color: rgba(255, 255, 255, 0.5); /* Change the border color */
+}
+
+.navbar-toggler-custom:focus {
+    background-color: rgba(255, 255, 255, 0.5); /* Change the background color on focus */
+    border-color: rgba(255, 255, 255, 0.5); /* Change the border color on focus */
+}
+
+.navbar-toggler-custom:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Change the background color on hover */
+    border-color: rgba(255, 255, 255, 0.7); /* Change the border color on hover */
+}
+
+.navbar-bottom-line {
+    border-bottom: 1px solid #d3a8e5; /* Adjust thickness and color as needed */
+}
+
+
+.home-div,.project-div,.skill-div,.contact-div{
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    min-height: 100vh; /* Ensure minimum height of 100vh */
+    padding-bottom: 50px; /* Add padding to prevent content from touching the bottom */
+}
+
+/* #projects{
+    max-height: 100% !important;
+} */
+
+#intro{
+    /* height: 200px; */
+    margin-left: auto;
+}
+
+.git{
+    padding-left: 8px;
+}
+
+.social-logo{
+    width: 25px;
+    height: 25px;
+}
+
+.profile-img-container {
+    width: 300px; /* Adjust the size of the circular frame */
+    height: 300px; /* Adjust the size of the circular frame */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide overflow content to create circular shape */
+}
+
+.profile-img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.wavy-circle {
+    border: 3px solid transparent; /* Set border width and make it transparent */
+    border-image: url('portfolio\portfo\media\File\Vector.png') 30 round; /* Set wavy border image */
+}
+
+.highlight{
+    /* font-weight: bolder; */
+    color: #874bad;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.sub-text {
+    font-size: 1.2rem;
+    color: #707070;
+    line-height: 1.5;
+}
+
+.card{
+    background-color: #eedeff;
+}
+
+.card-button{
+    background-color: #874bad;
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 24px; /* Add border radius for rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #d3a8e5;
+    /* color: #874bad; */
+}
+
+.card-button:active {
+    background-color: #6e3882; /* Darker shade of purple */
+}
+
+
+.contact-email {
+    font-size: 18px;
+    text-decoration: none; /* Remove underline */
+    color: #874bad; /* Dark gray color */
+}
+
+.contact-email:hover {
+    font-size: 18px;
+    text-decoration: none; /* Remove underline */
+    color: #d3a8e5; /* Dark gray color */
+}
+
+.custom-alert {
+    background-color: #d3a8e5; /* Adjust the background color as needed */
+    border-color: #874bad; /* Adjust the border color as needed */
+    color: #721c24; /* Adjust the text color as needed */
+}
+
+#id_message {
+    height: 80px; /* Adjust the height as needed */
+}
+
+
+@media (min-width: 768px) {
+    .p-md-left-10 {
+        padding-left: 150px !important; /* Adjust as needed for desktop */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.5rem; /* Adjust font size for medium screens */
+    }
+    
+    /* Intro Section */
+    #intro {
+        margin-left: 0; /* Remove margin for medium screens */
+    }
+    
+    /* Profile Image */
+    .profile-img-container {
+        width: 200px; /* Adjust profile image width for medium screens */
+        height: 200px; /* Adjust profile image height for medium screens */
+    }
+    
+    /* Padding for medium screens */
+    
+    
+    /* Skills Section */
+    .col-lg-3 {
+        flex: 0 0 45%; /* Adjust column width for medium screens */
+        max-width: 45%; /* Adjust max-width for medium screens */
+    }
+    
+    /* Project Cards */
+    .col.mb-4 {
+        flex: 0 0 45%; /* Adjust column width for medium screens */
+        max-width: 45%; /* Adjust max-width for medium screens */
+    }
+    
+    /* Contact Section */
+    #contact h2 {
+        font-size: 2rem; /* Adjust font size for medium screens */
+    }
+}
+
+/* Padding for mobile screens */
+@media (max-width: 767.98px) {
+    /* .p-md-left-10 {
+        padding-left: auto !important;
+        padding-bottom: 20px;
+    } */
+
+
+    .project-div, .skill-div, .contact-div {
+        padding-top: 20px; /* Add top padding for spacing */
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust font size for small screens */
+    }
+    
+    /* Profile Image */
+    .profile-img-container {
+        width: 150px; /* Adjust profile image width for small screens */
+        height: 150px; /* Adjust profile image height for small screens */
+    }
+    
+    /* Padding for small screens */
+    .p-md-left-10 {
+        padding-left: 0 !important; /* Remove left padding for small screens */
+        padding-bottom: 10px; /* Add bottom padding for small screens */
+    }
+
+    /* Skills Section */
+    .col-lg-3 {
+        flex: 0 0 100%; /* Adjust column width for small screens */
+        max-width: 100%; /* Adjust max-width for small screens */
+    }
+    
+    /* Project Cards */
+    .col.mb-4 {
+        flex: 0 0 100%; /* Adjust column width for small screens */
+        max-width: 100%; /* Adjust max-width for small screens */
+    }
+    
+    /* Contact Section */
+    #contact h2 {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+}
+
