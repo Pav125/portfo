@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif; /* Change font family */
     /* background-color: #0d1b2a; */
-    background-color: #f5efff;
+    background-color: #fffcfc;
     /* color: #FFEDD8; */
     color: #3e3b5f;
     font-family: 'Lato', sans-serif;
@@ -24,7 +24,7 @@ h1, h2, h3 {
 .nav-link,.navbar-nav{
     /* color: #FFEDD8; */
     font-family: Arial, sans-serif; /* Change font family */
-    color: #000000;
+    color: #3e3b5f;
     transition: color 0.3s;
 }
 
@@ -91,8 +91,8 @@ h1, h2, h3 {
 }
 
 .profile-img-container {
-    width: 300px; /* Adjust the size of the circular frame */
-    height: 300px; /* Adjust the size of the circular frame */
+    width: 350px; /* Adjust the size of the circular frame */
+    height: 350px; /* Adjust the size of the circular frame */
     border-radius: 50%; /* Make the container circular */
     overflow: hidden; /* Hide overflow content to create circular shape */
 }
@@ -104,16 +104,17 @@ h1, h2, h3 {
 
 .wavy-circle {
     border: 3px solid transparent; /* Set border width and make it transparent */
-    border-image: url('portfolio\portfo\media\File\Vector.png') 30 round; /* Set wavy border image */
+    /* border-image: url('portfolio\portfo\media\File\Vector.png') 30 round; Set wavy border image */
 }
 
 .highlight{
     /* font-weight: bolder; */
-    color: #874bad;
+    color: #3e3b5f;
+    /* font-size: ; */
 }
 
 .main-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -188,12 +189,14 @@ h1, h2, h3 {
     
     /* Profile Image */
     .profile-img-container {
-        width: 200px; /* Adjust profile image width for medium screens */
-        height: 200px; /* Adjust profile image height for medium screens */
+        width: 250px; /* Adjust profile image width for medium screens */
+        height: 250px; /* Adjust profile image height for medium screens */
     }
     
     /* Padding for medium screens */
-    
+    .p-md-left-10 {
+        padding-left: 75px !important; /* Adjust as needed for desktop */
+    }
     
     /* Skills Section */
     .col-lg-3 {
@@ -231,8 +234,8 @@ h1, h2, h3 {
     
     /* Profile Image */
     .profile-img-container {
-        width: 150px; /* Adjust profile image width for small screens */
-        height: 150px; /* Adjust profile image height for small screens */
+        width: 200px; /* Adjust profile image width for small screens */
+        height: 200px; /* Adjust profile image height for small screens */
     }
     
     /* Padding for small screens */
